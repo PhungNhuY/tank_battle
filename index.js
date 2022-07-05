@@ -27,7 +27,7 @@ var gameArea = {
         this.interval = setInterval(updateGameArea, 20);
         window.addEventListener('keydown', function (e) {
             gameArea.keys = (gameArea.keys || []);
-            gameArea.keys[e.keyCode] = (e.type == "keydown");
+            gameArea.keys[e.keyCode] = (e.type == "keydown" );
         })
         window.addEventListener('keyup', function (e) {
             gameArea.keys[e.keyCode] = (e.type == "keydown");
